@@ -1,38 +1,118 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  width: 20px;
+  height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 16em;
+  padding: 10px;
+  border: 3px solid rgb(255, 255, 255);
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.resposta1,
+.resposta2,
+.resposta3,
+.resposta4,
+.resposta5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 330px;
+  height: 2em;
+  margin-top: 40px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.question2,
+.question3,
+.question4,
+.question5 {
+  display: none;
+}
+
+.end-quiz {
+  font-size: 70px;
+  display: none;
+}
+
+.right-questions {
+  width: 15em;
+  height: 50px;
+  font-size: 30px;
+  display: none;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.modal-check-answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 80%;
+  font-size: 50px;
+  color: orangered;
+  display: none;
+}
+
+.close-modal {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: -500px;
+  margin-left: 800px;
+  color: white;
+  cursor: pointer;
 }
